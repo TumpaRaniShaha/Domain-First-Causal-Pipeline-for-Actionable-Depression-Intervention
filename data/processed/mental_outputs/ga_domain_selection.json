@@ -1,0 +1,15 @@
+{
+  "domain_list": [
+    "behavioral-lifestyle",
+    "clinical-health",
+    "other",
+    "socio-demographic"
+  ],
+  "best_domains": [
+    "clinical-health"
+  ],
+  "fitness": 0.13999626155884048,
+  "r2": 0.1549962615588405,
+  "mae": 2.9125968634194033,
+  "n_features": 10
+}

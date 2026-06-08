@@ -1,0 +1,17 @@
+experiment: default
+input_dir: data/raw/Dataset
+output_dir: data/processed/mental_outputs
+low_mem: true
+row_subsample: 30000
+shap_sample: 2000
+pi_repeats: 2
+ohe_min_frequency: 0.02
+ohe_max_categories: 25
+ga_generations: 8
+ga_population: 12
+force_gam: true
+eval_sample: 2000
+binary_outcome: true
+phq9_binary_threshold: 10
+prune_relative_threshold: 0.02
+topk_per_group: 10
