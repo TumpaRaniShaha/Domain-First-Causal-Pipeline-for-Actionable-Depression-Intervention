@@ -1,4 +1,4 @@
-﻿# Domain-Aware Causal Feature Selection for Depression
+﻿# Severity Backtracking Depression Intervention through Domain-Aware Causally Consistent Grouped Feature Learning with Interpretable Additive Model
 
 A research-oriented Python implementation of a domain-aware causal feature selection pipeline for actionable depression intervention analysis using NHANES survey data.
 
