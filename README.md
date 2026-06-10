@@ -87,16 +87,6 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Data Preparation
-
-Place the raw NHANES `.xpt` files in:
-
-```text
-data/raw/Dataset
-```
-
-If you are using the original notebook data source, this repo-local path replaces the prior Colab-specific data locations.
-
 ## Running the Pipeline
 
 Run the full pipeline with:
