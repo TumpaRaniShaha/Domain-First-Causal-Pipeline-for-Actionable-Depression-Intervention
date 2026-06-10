@@ -1,28 +1,22 @@
 ﻿# Severity Backtracking Depression Intervention through Domain-Aware Causally Consistent Grouped Feature Learning with Interpretable Additive Model
 
-A research-oriented Python implementation of a domain-aware causal feature selection pipeline for actionable depression intervention analysis using NHANES survey data.
+## Description
+This repository contains a Domain-Aware Causally-Consisted Grouped Feature Selection (DCGFS) framework. It prioritizes domain knowledge before model construction. Instead of treating features as independent variables, the framework organizes variables into clinically meaningful domains, evaluates their contribution using interpretable additive learner, and identifies the most influential domains and features through causal and optimization-driven analysis.
 
-## Overview
-
-This project demonstrates a reproducible workflow for selecting depression-related features with domain-awareness, combining:
-
-- NHANES multi-module data ingestion and person-level merging
-- PHQ-9 depression outcome construction
-- tree-based regression with SHAP-driven feature scoring
-- domain-aware pruning of candidate variables
-- genetic algorithm selection of domain subsets
-- optional binary classification comparison for depression screening
-
-The implementation is designed to support both exploratory research and production-style reproducibility.
-
-## Research Motivation
-
-Depression is a complex outcome influenced by demographic, lifestyle, clinical, and behavioral factors.
-This pipeline emphasizes:
-
-- domain-aware grouping of features to preserve interpretability
-- causal-minded feature selection through SHAP importance and domain-level evaluation
-- a smaller, more actionable feature set that remains predictive across domains
+## Dataset Information
+**Source**
+**Citation**
+**Classes**
+# Overview of the process
+The pipeline integrates:
+Domain-aware feature grouping
+Structured feature prioritization
+Explainable machine learning
+SHAP-based feature interpretation
+Permutation importance analysis
+Genetic Algorithm (GA) based domain optimization
+Group-wise feature ranking and pruning
+Comparative evaluation against conventional feature selection approaches
 
 ## Repository Structure
 
@@ -126,6 +120,3 @@ If binary evaluation is enabled:
 - The notebook in `notebooks/` contains the exploratory analysis and initial model development.
 - The code is written to be extensible: adjust domain labels, pruning thresholds, or model choices in the pipeline source.
 
-## Citation
-
-If you reuse or extend this work, please cite the repository and acknowledge the domain-aware causal selection approach.
