@@ -5,7 +5,9 @@ This repository contains a Domain-Aware Causally-Consisted Grouped Feature Selec
 
 ## Dataset Information
 This study utilizes the publicly available National Health and Nutrition Examination Survey (NHANES) 2017–March 2020 Pre-pandemic dataset, provided by the National Center for Health Statistics (NCHS), Centers for Disease Control and Prevention (CDC). The dataset contains demographic, socioeconomic, behavioral, and health-related variables along with the Patient Health Questionnaire-9 (PHQ-9), a clinically validated instrument for depression assessment. The PHQ-9 score, ranging from 0 to 27, was used to derive depression severity levels.
+
 **Source** NHANES 2017–March 2020 Pre-pandemic Data, CDC/NCHS https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2017-2020
+
 **Citation**
 Centers for Disease Control and Prevention (CDC). National Health and Nutrition Examination Survey (NHANES), 2017–March 2020 Pre-pandemic Data Files. National Center for Health Statistics (NCHS), Hyattsville, MD, USA. Available at: https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2017-2020. 
 
