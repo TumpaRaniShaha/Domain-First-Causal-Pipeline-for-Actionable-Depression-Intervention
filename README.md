@@ -1,12 +1,28 @@
 ﻿# Severity Backtracking Depression Intervention through Domain-Aware Causally Consistent Grouped Feature Learning with Interpretable Additive Model
 
 ## Description
-This repository contains a Domain-Aware Causally-Consisted Grouped Feature Selection (DCGFS) framework. It prioritizes domain knowledge before model construction. Instead of treating features as independent variables, the framework organizes variables into clinically meaningful domains, evaluates their contribution using interpretable additive learner, and identifies the most influential domains and features through causal and optimization-driven analysis.
+This repository contains a Domain-Aware Causally-Consisted Grouped Feature Selection (DCGFS) framework for identify the significant domain and feature to plan the severity backtract intervention. It prioritizes domain knowledge before model construction. Instead of treating features as independent variables, the framework organizes variables into clinically meaningful domains, evaluates their contribution using interpretable additive learner, and identifies the most influential domains and features through causal and optimization-driven analysis.
 
 ## Dataset Information
-**Source**
+This study utilizes the publicly available National Health and Nutrition Examination Survey (NHANES) 2017–March 2020 Pre-pandemic dataset, provided by the National Center for Health Statistics (NCHS), Centers for Disease Control and Prevention (CDC). The dataset contains demographic, socioeconomic, behavioral, and health-related variables along with the Patient Health Questionnaire-9 (PHQ-9), a clinically validated instrument for depression assessment. The PHQ-9 score, ranging from 0 to 27, was used to derive depression severity levels.
+**Source** NHANES 2017–March 2020 Pre-pandemic Data, CDC/NCHS https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2017-2020
 **Citation**
-**Classes**
+Centers for Disease Control and Prevention (CDC). National Health and Nutrition Examination Survey (NHANES), 2017–March 2020 Pre-pandemic Data Files. National Center for Health Statistics (NCHS), Hyattsville, MD, USA. Available at: https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2017-2020. 
+
+**Depression Severity Classes** Following the standard PHQ-9 interpretation, participants were categorized into five severity levels: Normal (0–4), Mild (5–9), Moderate (10–14), Moderately Severe (15–19), and Severe (20–27).
+
+**Preprocessing Steps** The preprocessing pipeline included 
+1. Merging relevant NHANES questionnaire and demographic files using the participant identifier (SEQN),
+2. Removing duplicate records,
+3. Handling missing values through data quality screening and imputation/removal where appropriate,
+4. Encoding categorical variables into numerical representations,
+5. Constructing the depression severity target variable from PHQ-9 scores,
+6. Standardizing variable formats, and
+7. Filtering incomplete samples to ensure analytical consistency.
+
+The final processed dataset was used for domain-aware grouping, causal feature analysis, and intervention-oriented modeling.
+
+
 # Overview of the process
 The pipeline integrates:
 Domain-aware feature grouping
